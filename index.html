@@ -154,6 +154,17 @@
             color: var(--primary-color);
         }
 
+        .nav-container { position: relative; }
+
+        .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        /* optional: vertical center if header has height */
+        top: 50%;
+        transform: translate(-50%, -50%);
+        }
+
         .logo span {
             color: var(--secondary-color);
         }
@@ -788,3 +799,4 @@
     </script>
 </body>
 </html>
+
