@@ -623,6 +623,32 @@
             .w3-row {display: flex; flex-wrap: wrap}
             .w3-quarter {width: 25%; box-sizing: border-box}
             .w3-half {width: 50%; box-sizing: border-box}
+                /* Photo grid: align images side-by-side responsively */
+        .photo-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 0 -16px;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .photo-grid img {
+            width: calc(20% - 12px);
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 992px) {
+            .photo-grid img { width: calc(33.333% - 12px); height: 200px; }
+        }
+
+        @media (max-width: 576px) {
+            .photo-grid img { width: calc(50% - 12px); height: 160px; }
+        }
     </style>
 </head>
 <body>
@@ -889,5 +915,6 @@
     </script>
 </body>
 </html>
+
 
 
