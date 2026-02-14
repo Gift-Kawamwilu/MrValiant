@@ -225,6 +225,20 @@
             border-radius: 10px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
         }
+                /* Main hero portrait (V.png) - responsive sizing for phone view */
+        .hero-v {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 576px) {
+            .hero-v { max-width: 320px; }
+        }
 
         /* About Section */
         .about-content {
@@ -912,6 +926,7 @@
     </script>
 </body>
 </html>
+
 
 
 
